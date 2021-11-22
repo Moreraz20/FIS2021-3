@@ -36,5 +36,5 @@ Se realizará la entrega al tercer día consiguiente a la planeación; En donde 
 
 Se dá una semana hábil, para presentar requerimientos en cuanto a fallos de funcionalidad ,asistencia por fallas o bugs presentes en el programa.  
 
-Total a pagar estimado: 50.000 pesos colombianos. 
+Total a pagar estimado: 100.000 pesos colombianos, sin tener en cuenta días de mantenimiento o reparación. 
 
