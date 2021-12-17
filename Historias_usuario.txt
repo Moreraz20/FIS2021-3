@@ -1,0 +1,187 @@
+Universidad Distrital “Francisco José De Caldas”
+Ejercicio De fundamentos de ingeniería de software
+Diciembre 17 De 2021
+
+Nombre: Jonathan Estiven Castellanos Castellanos		Código: 20191020003
+Nombre: Andres Felipe Morera Diaz		                Código: 20191020056
+#############################################################################################
+
+
+Propuestas de historias de usuario para tienda de barrio: 
+
+
+*Cliente*
+
+________________________________________________________________________________________________________________________________________
+Título: Realizar pedido
+
+Historia de usuario:
+
+Como cliente deseo poder consultar los productos en existencia para poder realizar mi pedido.
+
+Comentarios:
+- El cliente debe estar previamente registrado en la plataforma con los datos pertinentes.
+- Para poder realizar el pedido se debe disponer de una interfaz que muestre el catálogo de productos disponibles y su precio.
+
+Criterios de aceptación:
+- No se puede realizar el pedido sin antes especificar el medio de pago.
+- La información del pedido se almacena en la base de datos
+________________________________________________________________________________________________________________________________________
+
+
+________________________________________________________________________________________________________________________________________
+Título: Cancelar pedido
+
+Historia de usuario:
+
+Como cliente deseo poder cancelar mi pedido.
+
+Comentarios:
+- El cliente debe estar previamente registrado en la plataforma con los datos pertinentes.
+- Para poder cancelar el pedido se debe disponer de una interfaz en la cual pueda cancelar su pedido.
+
+Criterios de aceptación:
+- No se puede cancelar el pedido sin antes haber realizado un pedido.
+- No se puede cancelar un pedido luego de que este ha sido enviado. 
+-El pedido se elimina de la base de datos y se reestablece el stock. 
+________________________________________________________________________________________________________________________________________
+
+
+
+________________________________________________________________________________________________________________________________________
+Título: Modificar pedido
+
+Historia de usuario:
+
+Como cliente deseo poder modificar mi pedido.
+
+Comentarios:
+- El cliente debe estar previamente registrado en la plataforma con los datos pertinentes.
+- Para poder modificar el pedido se debe disponer de una interfaz en la cual pueda consultar cantiad de productos agregados
+con la opcion de agregar más, quitar o cambiar.
+
+Criterios de aceptación:
+- No se puede modificar el pedido sin antes haber realizado un pedido.
+- No se puede modificar un pedido luego de que este ha sido enviado. 
+-El pedido se modifica en la base de datos y se actualiza el stock. 
+________________________________________________________________________________________________________________________________________
+
+
+________________________________________________________________________________________________________________________________________
+Título: seguimiento del pedido
+
+Historia de usuario:
+
+Como cliente deseo poder consultar el estado actual de mi pedido a fin de prepararme para la llegada del domiciliario y rectificar la lista de víveres.
+
+Comentarios:
+- El pedido debe haber sido designado previamente a un domiciliario.
+- Para facilitar el seguimiento el aplicativo debe contar con un mapa el cual muestre en tiempo real la ubicación del domiciliario y los productos con los que este lleva.
+
+Criterios de aceptación:
+- Una vez designado el pedido a un domiciliario este no podrá ser cancelado.
+- En caso de no recibir la totalidad de los productos se realizará la debida compensación económica al cliente.
+________________________________________________________________________________________________________________________________________
+
+
+________________________________________________________________________________________________________________________________________
+Título: comunicación con el repartidor
+
+Historia de usuario:
+
+Como cliente deseo poder comunicarme con el domiciliario para pedir infiormación sobre la entrega.
+
+Comentarios:
+- Para hacer posible la comunicación de ambas partes el aplicativo debe contar con una sección de chat directo..
+
+Criterios de aceptación:
+- Se debe enviar una notificación inmediata a cada una de las partes con cada mensaje, a fin de garantizar que estos sean respondidos en el menor tiempo posible.
+- La conversación es guardada en la base de datos.
+________________________________________________________________________________________________________________________________________
+
+
+*Tendero (y dueño)*
+
+
+________________________________________________________________________________________________________________________________________
+Título: Actualizar inventario
+
+Historia de usuario:
+
+Como tendero deseo poder actualizar el stock de cada uno de los productos, así como agregar nuevos para evitar malentendidos con nuestros clientes.
+
+Comentarios:
+- Para poder realizar la actualización se debe disponer de una interfaz que muestre el catálogo de productos.
+
+Criterios de aceptación:
+- El aplicativo debe notificar al tendero si un determinado producto necesita ser abastecido.
+- La información del stock se almacena en la base de datos
+________________________________________________________________________________________________________________________________________
+
+
+________________________________________________________________________________________________________________________________________
+Título: Modificar domiciliarios
+
+Historia de usuario:
+
+Como tendero deseo poder agregar domiciliarios para que solo estos tengan acceso a llevar los productos de mi tienda.
+
+Comentarios:
+- Para poder realizar la actualización se debe disponer de una interfaz que permita agregar o quitar domiciliarios.
+
+Criterios de aceptación:
+- No se puede eliminar un domiciliario inexistente.
+- No se puede agregar dos veces un mismo domiciliario.
+- La información del stock se almacena en la base de datos
+________________________________________________________________________________________________________________________________________
+
+
+*Domiciliario*
+
+
+________________________________________________________________________________________________________________________________________
+Título: comunicación con cliente
+
+Historia de usuario:
+
+Como domiciliario deseo poder comunicarme con el cliente para informar de posibles contratiempos con la entrega.
+
+Comentarios:
+- Para hacer posible la comunicación de ambas partes el aplicativo debe contar con una sección de chat directo..
+
+Criterios de aceptación:
+- Se debe enviar una notificación inmediata a cada una de las partes con cada mensaje, a fin de garantizar que estos sean respondidos en el menor tiempo posible.
+- La conversación es guardada en la base de datos.
+________________________________________________________________________________________________________________________________________
+
+
+________________________________________________________________________________________________________________________________________
+Título: comunicación con el tendero
+
+Historia de usuario:
+
+Como domiciliario deseo poder comunicarme con el tendero para informar de posibles contratiempos con la entrega.
+
+Comentarios:
+- Para hacer posible la comunicación de ambas partes el aplicativo debe contar con una sección de chat directo..
+
+Criterios de aceptación:
+- Se debe enviar una notificación inmediata a cada una de las partes con cada mensaje, a fin de garantizar que estos sean respondidos en el menor tiempo posible.
+- La conversación es guardada en la base de datos.
+________________________________________________________________________________________________________________________________________
+
+
+________________________________________________________________________________________________________________________________________
+Título: Darse de baja
+
+Historia de usuario:
+
+Como domiciliario deseo poder darme de baja en la aplicación.
+
+Comentarios:
+- Para hacer posible la comunicación de ambas partes el aplicativo debe contar con una sección que permita darse de baja.
+
+Criterios de aceptación:
+- Solo se peude dar de baja un repartidor existente.
+- Se cambia el estado del repartidor en la base de datos.
+________________________________________________________________________________________________________________________________________
